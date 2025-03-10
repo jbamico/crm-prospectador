@@ -17,6 +17,12 @@ const ProspectButton = ({ onClick, count }: ProspectButtonProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       aria-label="Add prospect to CRM"
+      style={{
+        position: 'fixed', 
+        right: '20px', 
+        top: '30%',
+        zIndex: 10000
+      }}
     >
       <UserPlus className="h-6 w-6" />
       {count > 0 && (
