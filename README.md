@@ -20,6 +20,34 @@ If you want to work locally using your own IDE, you can clone this repo and push
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
+### Installing Node.js & npm using nvm
+
+To install Node.js and npm using nvm (Node Version Manager), follow these steps:
+
+1. **Install nvm**:
+    ```sh
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    ```
+
+2. **Load nvm**:
+    ```sh
+    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    ```
+
+3. **Install Node.js**:
+    ```sh
+    nvm install node
+    ```
+
+4. **Verify installation**:
+    ```sh
+    node -v
+    npm -v
+    ```
+
+Now you have Node.js and npm installed and can proceed with the project setup.
+
 Follow these steps:
 
 ```sh
