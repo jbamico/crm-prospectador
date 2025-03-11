@@ -1,7 +1,12 @@
 
-const fs = require('fs');
-const path = require('path');
-const archiver = require('archiver');
+import fs from 'fs';
+import path from 'path';
+import archiver from 'archiver';
+import { fileURLToPath } from 'url';
+
+// Get the directory name using ES modules approach
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Make sure the dist directory exists
 if (!fs.existsSync('./dist')) {
